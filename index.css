@@ -1,0 +1,166 @@
+  
+@font-face {
+    font-family: 'solaimanlipi';
+    src: url('fonts/SolaimanLipi.eot');
+    src: url('fonts/SolaimanLipi.eot') format('embedded-opentype'),
+         url('fonts/SolaimanLipi.woff2') format('woff2'),
+         url('fonts/SolaimanLipi.woff') format('woff'),
+         url('fonts/SolaimanLipi.ttf') format('truetype'),
+         url('fonts/SolaimanLipi.svg#SolaimanLipi') format('svg');
+}
+
+body{
+    font-family: Google Sans, 'solaimanlipi';
+    margin: 0;
+}
+
+
+.fillBar {
+    background-color: orangered;
+    width: 0;
+    height: 4px;
+    position: fixed;
+    top: 28.5%;
+    transition: 1s;
+    z-index: 95;
+    display: none;
+    /* border-radius: 20px; */
+  }
+
+  .seek-round{
+    background:  orangered;
+    width: 10px;
+    height: 10px;
+    position: fixed;
+    z-index: 99;
+    top: 28%;
+    left: 0;
+    border-radius: 50%;
+    transition: 1s;
+    display: none;
+  }
+
+ .fill{
+     background:  #e7e7e7;
+     width: 100%;
+     height: 4px;
+     position: fixed;
+     z-index: 94;
+     top: 28.5%;
+     display: none;
+ }
+
+  .fillBarSeek{
+      /* background:  #e7e7e7; */
+      width: 100%;
+      height: 4px;
+      position: fixed;
+      z-index: 96;
+      top: 28.5%;
+      display: none;
+  }
+
+
+  .bn-ayat{
+      text-align: center;
+      font-size: 20px;
+      width: 100%;
+      padding: 10px;
+      z-index: 99;
+  }
+
+ 
+
+  .caption{
+    display: flex;
+    align-items: center;
+    height: 200px;
+    box-shadow: 0 1px 5px rgba(0,0,0,.5);
+    margin-bottom: 20px;
+    background: #222;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+   
+  }
+
+  .time{
+      color: #fff;
+      position: fixed;
+      top: 25%;
+      left: 2%;
+      display: none;
+  }
+
+  .duration{
+    color: #fff;
+    position: fixed;
+    top: 25%;
+    right: 2%;
+    display: none;
+  }
+
+  .play{
+      color: #fff;
+      position: fixed;
+      top: 24%;
+      left: 47%;
+      z-index: 99;
+  }
+
+  .next{
+    color: #fff;
+    position: fixed;
+    top: 24%;
+    left: 57%;
+    
+}
+
+.prev{
+    color: #fff;
+    position: fixed;
+    top: 24%;
+    left: 37%;
+    
+}
+.player{
+    z-index: 99;
+}
+
+.bn-ayat:hover .play{
+    color: orangered;
+}
+
+.surahName{
+    color: #e7e7e7;
+    font-weight: bold;
+    padding: 2px 5px;
+}
+.recitor{
+    color: #e7e7e7;
+    padding: 2px 5px;
+    font-size: 13px;
+    float: right;
+    font-style: italic;
+}
+
+.surahList{
+    position: absolute;
+    top: 29.5%;
+    background: #333;
+    width: 100%;
+}
+
+.surah{
+    padding: 10px;
+    color: #fff;
+    border-bottom: 1px solid #222;
+    cursor: pointer;
+}
+
+.red{
+    background: red;
+}

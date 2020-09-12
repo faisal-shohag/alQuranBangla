@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AL Quran</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans" as="style" />
+    <link rel="stylesheet" href="./index.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+
+
+<body>
+
+    
+    <!-- <div class="track">
+        <audio width="100px" height="60px" controls>
+            <source src="./tracks/63. Al-Munafiqun.mp3" type="audio/mpeg">
+                Your Browser Doesn't support the audio
+        </audio>
+    </div> -->
+
+
+
+    <div class="caption"></div>
+    <div class="player">
+        <!-- <div class="recitor animate__animated animate__fadeIn"></div> -->
+        <div class="surahName animate__animated animate__fadeIn"></div>
+        <div class="time animate__animated animate__bounceIn"></div> <div class="duration animate__animated animate__bounceIn"></div>
+        <div id="seekslider" class="fillBarSeek animate__animated animate__fadeIn" style="display: inline-block;"></div> 
+        <div class="fillBar animate__animated animate__fadeIn"></div>
+        <div class="seek-round animate__bounceIn"></div>
+        <div class="fill animate__fadeIn"></div>    
+    <div  id="play" class="material-icons play animate__animated animate__bounceIn">play_arrow</div>
+    <div class="material-icons next animate__animated animate__bounceIn">fast_forward</div>
+    <div class="material-icons prev animate__animated animate__bounceIn">fast_rewind</div>
+    <br>
+    </div>
+
+    <div class="surahList"></div>
+
+    
+    <!--  -->
+    <button style="position: absolute; top: 40%; display: none;" id="btt">add</button>
+    <div style="position: absolute; top: 45%" class="btt"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
